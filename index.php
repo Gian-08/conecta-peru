@@ -1,5 +1,4 @@
 <?php 
-
  require 'system/config.php';
  require 'system/core/autoload.php';
  
