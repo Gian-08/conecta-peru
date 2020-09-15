@@ -1,25 +1,3 @@
-<?php 
- require 'system/config.php';
- require 'system/core/autoload.php';
- 
-
- $router = new Router();
-
- $controller = $router->getController();
- $metod = $router->getMethod();
- $param = $router->getParam();
-
- echo "Controlador: {$controller} </br>" ;
- echo "Metodo: {$metod} </br>";
- echo "Param: {$param} </br>"; 
-
- require PATH_CONTROLLERS . "{$controller}Controller.php";
- $controller .= 'Controller';
- $controller = new $controller();
-
- $controller->$metod();
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -30,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <title>Bienvenidos a Conecta Peru</title>
 </head>
+
 <body>
     <div class="contenedor">
         <header class="header">
@@ -99,20 +78,67 @@
             </div>
         </header>
         <main class="main">
-            <div class="header-logo">
-                <img width="180px" src="./imagenes/Logo.png" alt="logoTienda">
+            <div class="carousel">
+                <div class="carousel-body">
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/3.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/4.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/5.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/6.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/7.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/8.jpg" alt="">
+                    </div>
+                    <div class="carousel-body-item">
+                        <img src="./imagenes/primer-slider-pc/9.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="header-logo">
-                <img width="180px" src="./imagenes/Logo.png" alt="logoTienda">
-            </div>
-            <div class="header-logo">
-                <img width="180px" src="./imagenes/Logo.png" alt="logoTienda">
-            </div>
-            <div class="header-logo">
-                <img width="180px" src="./imagenes/Logo.png" alt="logoTienda">
-            </div>
-            <div class="header-logo">
-                <img width="180px" src="./imagenes/Logo.png" alt="logoTienda">
+            <div class="carouselmovil">
+                <div class="carouselmovil-body">
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/1.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/2.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/3.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/4.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/5.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/6.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/7.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/8.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil-body-item">
+                        <img src="./imagenes/primer-slider-movil/9.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </main>
         <section class="section">
@@ -123,6 +149,29 @@
                     con usuarios y consumidores.¡Ofrece y/o busca tus productos en un
                     solo lugar!
                 </p>
+            </div>
+            <div class="carousel2">
+                <div class="carousel2-body">
+                    <div class="carousel2-body-item">
+                        <img src="./imagenes/slider-nuevo-pc/slidernuevo1.jpg" alt="">
+                    </div>
+                    <div class="carousel2-body-item">
+                        <img src="./imagenes/slider-nuevo-pc/slidernuevo2.jpg" alt="">
+                    </div>
+                    <div class="carousel2-body-item">
+                        <img src="./imagenes/slider-nuevo-pc/slidernuevo3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carouselmovil2">
+                <div class="carouselmovil2-body">
+                    <div class="carouselmovil2-body-item">
+                        <img src="./imagenes/slider-nuevo-movil/1rafotodeslider.jpg" alt="">
+                    </div>
+                    <div class="carouselmovil2-body-item">
+                        <img src="./imagenes/slider-nuevo-movil/2dafotodelslider.jpg" alt="">
+                    </div>
+                </div>
             </div>
             <div class="cotizacion">
                 <div class="cotizacion-title">
@@ -319,6 +368,7 @@
     </div>
     <script type="text/javascript" src="./js/modals-index.js"></script>
     <script type="text/javascript" src="./js/hamburger.js"></script>
+    <script type="text/javascript" src="./js/carousel.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,229 +1,228 @@
 :root {
-    --colorVerde: #00c1c8;
-    --colorNaranja: #ff9e00;
-    --colorNegro: #313131;
-    --colorGris: #e5e5e5;
-    --colorBlanco: #ffff;
-    --colorVerdeOscuro: #479ca0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  --colorVerde: #00c1c8;
+  --colorNaranja: #ff9e00;
+  --colorNegro: #313131;
+  --colorGris: #e5e5e5;
+  --colorBlanco: #ffff;
+  --colorVerdeOscuro: #479ca0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: var(--colorVerde);
+  align-items: center;
+  padding: 20px 0px 10px 0px;
+}
+.footer-title {
+  width: 20%;
+  text-align: center;
+}
+.footer-title img {
+  width: 40%;
+}
+
+.footer-suscripcion {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.footer-suscripcion h6 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-suscripcion form {
+  padding: 10px 0px 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-suscripcion form input {
+  flex-basis: 40%;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 0px 5px 15px;
+}
+
+.footer-suscripcion form button {
+  flex-basis: 20%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--colorBlanco);
+  color: var(--colorNaranja);
+  font-weight: 700;
+}
+.footer-suscripcion form button:hover {
+  flex-basis: 20%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--colorNaranja);
+  color: var(--colorBlanco);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-suscripcion span {
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-ayuda {
+  width: 70%;
+}
+
+.footer-ayuda ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.footer-ayuda li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-social {
+  width: 25%;
+}
+
+.footer-social h6 {
+  width: 50%;
+  color: white;
+  margin-left: auto;
+  text-align: center;
+}
+.footer-social .redes {
+  width: 50%;
+  margin-left: auto;
+  text-align: center;
+}
+.footer-social .redes a {
+  color: black;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social a i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  /*footer*/
   .footer {
     margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: var(--colorVerde);
     align-items: center;
     padding: 20px 0px 10px 0px;
   }
   .footer-title {
-    width: 20%;
-    text-align: center;
+    width: 30%;
+    order: 2;
   }
-  .footer-title img {
-    width: 40%;
-  }
-  
   .footer-suscripcion {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: auto;
+    width: 100%;
+    order: 1;
+    padding: 20px 0px 40px 0px;
   }
-  
-  .footer-suscripcion h6 {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-  }
-  
   .footer-suscripcion form {
-    padding: 10px 0px 5px 0px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
   }
-  
-  .footer-suscripcion form input {
-    flex-basis: 40%;
-    margin-right: 10px;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 0px 5px 15px;
-  }
-  
-  .footer-suscripcion form button {
-    flex-basis: 20%;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    background-color: var(--colorBlanco);
-    color: var(--colorNaranja);
-    font-weight: 700;
-  }
-  .footer-suscripcion form button:hover {
-    flex-basis: 20%;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    background-color: var(--colorNaranja);
-    color: var(--colorBlanco);
-    font-weight: 700;
-    cursor: pointer;
-  }
-  
-  .footer-suscripcion span {
-    color: white;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  
   .footer-ayuda {
-    width: 70%;
-  }
-  
-  .footer-ayuda ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-around;
-  }
-  
-  .footer-ayuda li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: white;
-  }
-  
-  .footer-social {
-    width: 25%;
-  }
-  
-  .footer-social h6 {
-    width: 50%;
-    color: white;
-    margin-left: auto;
+    order: 3;
+    width: 40%;
     text-align: center;
+  }
+  .footer-ayuda ul {
+    flex-direction: column;
+  }
+  .footer-social {
+    order: 4;
+    width: 30%;
+  }
+  .footer-social h6 {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
   }
   .footer-social .redes {
-    width: 50%;
-    margin-left: auto;
+    width: 100%;
+    margin: 0px;
     text-align: center;
   }
-  .footer-social .redes a {
-    color: black;
-    text-decoration: none;
+  .footer-social .rede i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer-suscripcion form input{
+    flex-basis: 50%;
+  }
+  .footer-title {
+    width: 25%;
+  }
+  .footer-title img {
+    width: 90%;
+  }
+  .footer-suscripcion {
+    padding: 10px 0px;
+  }
+  .footer-suscripcion h6 {
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+  }
+  .footer-suscripcion form button {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+  .footer-suscripcion span {
     color: white;
+    font-size: 12px;
+    text-align: center;
   }
-  
+  .footer-ayuda {
+    width: 50%;
+  }
+  .footer-ayuda ul {
+    padding: 10px;
+  }
+  .footer-ayuda li a {
+    font-size: 10px;
+  }
+  .footer-social {
+    order: 4;
+    width: 25%;
+  }
+  .footer-social h6 {
+    width: 90%;
+    text-align: center;
+    font-size: 11px;
+    margin: auto;
+  }
+  .footer-social .redes {
+    margin: auto;
+    width: 90%;
+  }
   .footer-social a i {
-    font-size: 30px;
+    font-size: 18px;
   }
-  
-  @media screen and (max-width: 1024px) {
-    /*footer*/
-    .footer {
-      margin-top: 40px;
-      align-items: center;
-      padding: 20px 0px 10px 0px;
-    }
-    .footer-title {
-      width: 30%;
-      order: 2;
-    }
-    .footer-suscripcion {
-      width: 100%;
-      order: 1;
-      padding: 20px 0px 40px 0px;
-    }
-    .footer-suscripcion form {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-    }
-    .footer-ayuda {
-      order: 3;
-      width: 40%;
-      text-align: center;
-    }
-    .footer-ayuda ul {
-      flex-direction: column;
-    }
-    .footer-social {
-      order: 4;
-      width: 30%;
-    }
-    .footer-social h6 {
-      margin: 0px;
-      text-align: center;
-      width: 100%;
-    }
-    .footer-social .redes {
-      width: 100%;
-      margin: 0px;
-      text-align: center;
-    }
-    .footer-social .rede i {
-      font-size: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 660px) {
-    .footer-suscripcion form input{
-      flex-basis: 50%;
-    }
-    .footer-title {
-      width: 25%;
-    }
-    .footer-title img {
-      width: 90%;
-    }
-    .footer-suscripcion {
-      padding: 10px 0px;
-    }
-    .footer-suscripcion h6 {
-      font-size: 16px;
-      text-align: center;
-      width: 90%;
-    }
-    .footer-suscripcion form button {
-      font-size: 12px;
-      padding: 0px 10px;
-    }
-    .footer-suscripcion span {
-      color: white;
-      font-size: 12px;
-      text-align: center;
-    }
-    .footer-ayuda {
-      width: 50%;
-    }
-    .footer-ayuda ul {
-      padding: 10px;
-    }
-    .footer-ayuda li a {
-      font-size: 10px;
-    }
-    .footer-social {
-      order: 4;
-      width: 25%;
-    }
-    .footer-social h6 {
-      width: 90%;
-      text-align: center;
-      font-size: 11px;
-      margin: auto;
-    }
-    .footer-social .redes {
-      margin: auto;
-      width: 90%;
-    }
-    .footer-social a i {
-      font-size: 18px;
-    }
-  }
-  
+}
